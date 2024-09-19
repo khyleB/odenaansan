@@ -121,3 +121,10 @@ require $theme_dir . '/inc/structure/navigation.php';
 require $theme_dir . '/inc/structure/post-meta.php';
 require $theme_dir . '/inc/structure/sidebars.php';
 require $theme_dir . '/inc/structure/search-modal.php';
+
+add_action('after_setup_theme','hf_remove_header_area');
+
+function hf_remove_header_area(){
+	remove_action('generate_header','generate_construct_header');
+}
+
