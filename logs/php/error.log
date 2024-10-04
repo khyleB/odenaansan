@@ -99,3 +99,4 @@ Stack trace:
 [22-Sep-2024 10:17:24 UTC] PHP Warning:  Undefined array key "uniqueId" in C:\Users\Khyle_2\Local Sites\odenaansan\app\public\wp-content\plugins\generateblocks\includes\blocks\class-container.php on line 997
 [22-Sep-2024 10:17:26 UTC] PHP Warning:  Undefined array key "uniqueId" in C:\Users\Khyle_2\Local Sites\odenaansan\app\public\wp-content\plugins\generateblocks\includes\blocks\class-container.php on line 997
 [22-Sep-2024 10:17:26 UTC] PHP Warning:  Undefined array key "uniqueId" in C:\Users\Khyle_2\Local Sites\odenaansan\app\public\wp-content\plugins\generateblocks\includes\blocks\class-container.php on line 997
+[26-Sep-2024 10:42:03 UTC] Cron reschedule event error for hook: give_monthly_scheduled_events, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"monthly","args":[],"interval":2592000}
