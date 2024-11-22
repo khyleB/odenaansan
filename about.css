@@ -1,0 +1,122 @@
+p {
+    font-size: 1rem;
+}
+
+/* --------------- Carousel Media Sizes --------------- */
+
+.carousel {
+    max-width: 800px;
+}
+
+.carousel-size {
+    height:500px;
+    width: 800px;
+}
+
+.carousel-caption {
+    position: static;
+    height: 200px;
+    max-width: 800px;
+    padding: .7rem;
+    padding-top: .8rem;
+    padding-bottom: 0;
+    background-color: #131414;
+}
+
+.carousel button {
+    max-width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel {
+        max-width: 750px;
+    }
+
+    .carousel-size {
+        height:450px;
+        width: 750px;
+    }
+
+    .carousel-caption {
+        height: 200px;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .carousel {
+        max-width: 700px;
+    }
+
+    .carousel-size {
+        height: 400px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        max-width: 550px;
+    }
+
+    .carousel-size {
+        height: 350px;
+        width: 550px;
+    }
+
+    .carousel-caption {
+        height: 225px;
+    }
+
+    .carousel button {
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        max-width: 400px;
+    }
+
+    .carousel-size {
+        height: 300px;
+        width: 400px;
+    }
+
+    .carousel-caption {
+        height: 300px;
+    }
+
+    .carousel button {
+        padding-bottom: 15rem;
+    }
+}
+
+.carousel-caption p {
+    color: #F4EFE9;
+}
+
+.carousel-caption h3 {
+    color: #F4EFE9;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-image {
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------- About Background ---------- */
+
+main.content-pages {
+    background-size: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main.content-pages {
+      background-image: none;
+    }
+  }
