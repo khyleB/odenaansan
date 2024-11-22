@@ -201,7 +201,6 @@ p.landing-text {
 }
 @media screen and (max-width: 1200px) {
   .landing-text {
-    display: none;
   }
 }
 
@@ -461,13 +460,13 @@ iframe {
 }
 
 h1.landing-text {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 p.landing-text {
   font-style: italic;
-  font-size: 1.1rem;
-  padding-bottom: .5rem;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
 }
 
 /* --- Landing Animations --- */
