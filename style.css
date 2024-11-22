@@ -1,0 +1,571 @@
+/* --------------- Variables --------------- */ 
+
+
+
+:root {
+  --ode-white: #F4EFE9;
+  --ode-black: #131414;
+  --ode-brown: #3E3431;
+  --ode-orange: #C3643A;
+  --ode-green: #8AA05B;
+  --ode-yellow: #FED566;
+  --ode-beige: #6d605c;
+  --transparent-light: #f4efe987;
+  --transparent-dark: #131414d2;
+  
+  --logo-red: #CE0710;
+  --logo-yellow: #FAD500;
+  
+  --logo-text: "Raleway", sans-serif;
+  --headings: "Oswald", sans-serif;
+  --subheadings: "Atkinson Hyperlegible", sans-serif;
+  --decorative: "Federo", sans-serif;
+
+  --bs-gutter-x: .1rem;
+}
+
+
+
+/* --------------- Root CSS --------------- */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+html, body {
+  background-color: var(--ode-white);
+  height: 100%;
+  font-family: var(--logo-text);
+}
+
+h1 {
+  font-family: var(--headings);
+  font-size: 4rem;
+  color: var(--ode-black);
+}
+
+h2 {
+  font-family: var(--subheadings);
+  font-size: 2rem;
+  color: var(--ode-brown);
+}
+
+h3 {
+  font-family: var(--subheadings);
+  font-size: 1.2rem;
+  color: var(--ode-brown);
+}
+
+h4 {
+  font-family: var(--subheadings);
+  font-size: 1.2rem;
+  color: var(--ode-white);
+  line-height: 0rem;
+}
+
+h5 {
+  font-family: var(--subheadings);
+  font-size: 1rem;
+  color: var(--ode-brown);
+}
+
+p {
+  font-family: var(--logo-text);
+  color: var(--ode-brown);
+  padding: .2rem;
+  max-width: 75ch;
+}
+
+button {
+  background-color: var(--ode-orange);
+  min-height: 3rem;
+  min-width: 10rem;
+  padding: .5rem;
+  border: 0;
+  border-radius: 25px;
+}
+
+video {
+  max-width: 80%;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+
+/* --------------- Title Colour Classes --------------- */
+
+
+
+.title-bar {
+  padding: 2rem;
+}
+
+.is-white {
+  background-color: var(--ode-white);
+}
+
+.is-yellow {
+  background-color: var(--ode-yellow);
+}
+
+.is-orange {
+  background-color: var(--ode-orange);
+}
+
+.is-green {
+  background-color: var(--ode-green);
+}
+
+
+
+/*----------------------------- Header & Nav Classes -----------------------------*/
+
+.landing-header {
+  background-color: #1314147d;
+  margin-bottom: 3rem;
+}
+
+.landing-header p {
+  font-family: var(--logo-text);
+}
+
+.landing-header h1 {
+  font-family: var(--decorative);
+}
+
+.navbar {
+  padding: 1.2rem 1rem;
+  background-color: var(--ode-orange);
+}
+
+@media (min-width: 645px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+@media (min-width: 645px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 645px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+.navbar-brand {
+  padding: 0.5rem 0.75rem;
+}
+
+
+.nav-link {
+  color: var(--ode-white);
+  font-family: var(--logo-text);
+  font-weight: 600;
+  font-size: 1.35rem;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-item {
+      padding: 0.5rem 0.75rem;
+  }
+}
+
+.navbar-landing {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-landing {
+    padding-bottom: 0;
+  }
+}
+
+
+
+/*----------------------------- Text Classes -----------------------------*/
+
+
+p.landing-text {
+  max-width: 125ch;
+}
+@media screen and (max-width: 1200px) {
+  .landing-text {
+    display: none;
+  }
+}
+
+.date {
+  font-family: var(--logo-text);
+  font-size: 1.5rem;
+  color: var(--ode-beige);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.caption {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  padding: .2rem;
+  padding-top: .6rem;
+}
+
+.caption-2 {
+  color: var(--ode-beige);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  padding-bottom: .2rem;
+}
+
+.text-dark {
+  color: black;
+}
+
+/*----------------------------- Main Classes -----------------------------*/
+
+
+.page-title {
+  text-align: center;
+}
+
+.third-content {
+  width: 30%;
+}
+
+.half-content {
+  width: 50%;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .half-content {
+  margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .half-content {
+  margin: 1rem;
+  padding: 1rem;
+  }
+}
+
+img.half-content {
+  border-radius: 25px;
+}
+
+.text-light {
+  font-size: 1rem;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ode-white);
+}
+
+@media screen and (max-width: 992px) {
+  .page-container {
+      height: fit-content;
+  }
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+  text-align: center;
+}
+
+.container-lg {
+  --bs-gutter-x: 0rem;
+}
+
+.bg-img-container {
+  min-height: fit-content;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover;
+}
+
+.bg-img-container.projects {
+  width: 100%;
+  height: auto;
+  background-image: url(Images/projects-header.jpg);
+  flex: 1 1 0;
+}
+
+.trans-textbox {
+  width: 50%;
+  background-color: var(--transparent-light);
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.trans-textbox.wide {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .trans-textbox {
+    padding: 4rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .trans-textbox {
+    padding: 2rem;
+  }
+}
+
+.text-blob-container {
+  text-align: center;
+  width: 30%;
+  background-color: var(--transparent-light);
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+
+@media (min-width: 1200px) {
+  .text-blob-container {
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .text-blob-container {
+      height: 40%;
+      width: 80%;
+      margin-bottom: 4rem;
+  }
+}
+
+main.content-pages {
+  background-image: url(Images/content-bg.png);
+  background-size: 100% auto;
+  margin-top: 89px;
+}
+
+@media screen and (max-width: 775px) {
+  main.content-pages {
+    background-image: none;
+  }
+}
+
+
+/* --------------- Video Classes --------------- */
+
+.video-embed {
+  width: 100%;
+  height: fit-content;
+}
+
+
+
+iframe {
+  width: 50rem;
+  height: 30rem; 
+}
+
+
+
+
+iframe {
+  width: 20rem;
+  height: 25rem; 
+}
+
+
+@media screen and (min-width: 500px) {
+  iframe {
+    width: 25rem;
+    height: 20rem; 
+  }
+}
+
+@media screen and (min-width: 576px) {
+  iframe {
+    width: 32rem;
+    height: 18rem; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 32rem;
+    height: 18rem; 
+  }
+}
+
+  @media screen and (min-width: 992px) {
+    iframe {
+      width: 48rem;
+      height: 27rem; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  iframe {
+    width: 60rem;
+    height: 36rem; 
+  }
+}
+
+/* --------------- Landing Page Classes --------------- */
+
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Images/landing-bg-temp.gif);
+  background-size: cover;
+}
+
+.landing-intro {
+  min-width: 80%;
+  border-radius: 25px;
+}
+
+.landing-btn {
+  font-weight: 600;
+  color: var(--ode-white);
+  background-color: var(--ode-orange);
+  margin: .2rem;
+}
+
+.landing-btn:hover {
+  background-color: var(--ode-brown);
+  color: var(--ode-white);
+}
+
+.landing-text {
+  color: var(--ode-white);
+  text-align: center;
+  padding: 0rem 7rem;
+}
+
+h1.landing-text {
+  font-size: 2rem;
+}
+
+p.landing-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  padding-bottom: .5rem;
+}
+
+/* --- Landing Animations --- */
+
+
+.text-blob-container {
+  position: relative;
+  display: inline-block;
+  bottom: -100px;
+  opacity: 0;
+  z-index: 11;
+}
+
+.text-blob-container p {
+  font-family: var(--subheadings);
+  font-size: 1.1rem;
+  color: var(--ode-black);
+  font-weight: 400;
+}
+
+.text-blob-container.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-out 0.5s;
+}
+
+.text-blob-container.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+
+
+/* --------------- News Page Classes --------------- */
+
+
+
+.news {
+  justify-content: end;
+  min-height: 500px;
+}
+
+@media screen and (max-width: 1100px) {
+  .news {
+    justify-content: center;
+  }
+}
+
+.bg-img-container.news {
+  width: 100%;
+  height: auto;
+  background-image: url(Images/waterplus.png);
+  flex: 1 1 0;
+}
+
+.story-container {
+  background-color: var(--ode-beige);
+  width: 500px;
+  height: fit-content;
+  max-height: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .story-container {
+    width: 400px;
+    height: fit-content;
+    max-height: none;
+  }
+}
+
+.thumbnail-size {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.archive {
+  max-width: 100%;
+  text-align: left;
+}
+
+.archive-thumb {
+  height: 50px;
+  width: 50px;
+  margin-right: 2rem;
+}
+
+/*----------------------------- Footer Classes -----------------------------*/
+
+.footer-container {
+  background-color: var(--ode-brown);
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+.landing-footer {
+  background-color: var(--transparent-dark);
+}
+
+.copyright-text {
+  margin: 0;
+}
