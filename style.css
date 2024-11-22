@@ -125,18 +125,6 @@ video {
 
 /*----------------------------- Header & Nav Classes -----------------------------*/
 
-.landing-header {
-  background-color: #1314147d;
-  margin-bottom: 3rem;
-}
-
-.landing-header p {
-  font-family: var(--logo-text);
-}
-
-.landing-header h1 {
-  font-family: var(--decorative);
-}
 
 .navbar {
   padding: 1.2rem 1rem;
@@ -181,28 +169,9 @@ video {
   }
 }
 
-.navbar-landing {
-  background-color: transparent;
-}
-
-@media screen and (min-width: 1200px) {
-  .navbar-landing {
-    padding-bottom: 0;
-  }
-}
-
 
 
 /*----------------------------- Text Classes -----------------------------*/
-
-
-p.landing-text {
-  max-width: 125ch;
-}
-@media screen and (max-width: 1200px) {
-  .landing-text {
-  }
-}
 
 .date {
   font-family: var(--logo-text);
@@ -425,80 +394,6 @@ iframe {
     height: 36rem; 
   }
 }
-
-/* --------------- Landing Page Classes --------------- */
-
-.landing-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url(Images/landing-bg-temp.gif);
-  background-size: cover;
-}
-
-.landing-intro {
-  min-width: 80%;
-  border-radius: 25px;
-}
-
-.landing-btn {
-  font-weight: 600;
-  color: var(--ode-white);
-  background-color: var(--ode-orange);
-  margin: .2rem;
-}
-
-.landing-btn:hover {
-  background-color: var(--ode-brown);
-  color: var(--ode-white);
-}
-
-.landing-text {
-  color: var(--ode-white);
-  text-align: center;
-  padding: 0rem 7rem;
-}
-
-h1.landing-text {
-  font-size: 3rem;
-}
-
-p.landing-text {
-  font-style: italic;
-  font-size: 1.4rem;
-  padding-bottom: 1rem;
-}
-
-/* --- Landing Animations --- */
-
-
-.text-blob-container {
-  position: relative;
-  display: inline-block;
-  bottom: -100px;
-  opacity: 0;
-  z-index: 11;
-}
-
-.text-blob-container p {
-  font-family: var(--subheadings);
-  font-size: 1.1rem;
-  color: var(--ode-black);
-  font-weight: 400;
-}
-
-.text-blob-container.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-out 0.5s;
-}
-
-.text-blob-container.fade {
-  bottom: 150px;
-  opacity: 0;
-  transition: ease-out 0.5s;
-}
-
 
 /* --------------- News Page Classes --------------- */
 
