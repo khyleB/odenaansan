@@ -126,8 +126,8 @@ p.landing-text {
 /* --------------- Header & Nav Classes --------------- */
 
 .landing-header {
-    background-color: #1314147d;
-    margin-bottom: 3rem;
+    background-image: linear-gradient(#1d4105, #1d4105bd, #1d4105a6, #1d41054e, #1d410500);
+    padding-bottom: 3rem;
 }
 
 .landing-header p {
@@ -147,6 +147,10 @@ p.landing-text {
     .navbar-landing {
         padding-bottom: 0;
     }
+}
+
+.nav-link {
+    font-size: 1rem;
 }
 
 /* --------------- Text Classes --------------- */
