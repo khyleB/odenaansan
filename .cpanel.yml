@@ -4,7 +4,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/odenaans/public_html/
+    - export DEPLOYPATH=/home/odenaans/odenaansan/
     - /bin/cp -R .vscode $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
