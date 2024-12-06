@@ -418,7 +418,7 @@ iframe {
 }
 
 .story-container {
-  background-color: var(--ode-beige);
+  background-color: var(--ode-yellow);
   width: 500px;
   height: fit-content;
   max-height: none;
