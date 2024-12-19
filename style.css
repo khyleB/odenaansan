@@ -37,7 +37,7 @@
   /*border: 1px solid black;*/
 }
 
-html, body {
+body {
   background-color: var(--ode-white);
   height: 100%;
   font-family: var(--logo-text);
@@ -203,6 +203,9 @@ video {
 
 /*----------------------------- Main Classes -----------------------------*/
 
+main {
+
+}
 
 .page-title {
   text-align: center;
