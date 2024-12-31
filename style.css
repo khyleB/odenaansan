@@ -212,6 +212,12 @@ main {
   text-align: center;
 }
 
+.quarters {
+	width: 20%;
+  height: 300px;
+  margin: auto;
+}
+
 .third-content {
   width: 30%;
 }
