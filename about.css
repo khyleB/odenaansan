@@ -2,25 +2,25 @@ p {
     font-size: 1.5rem;
  }
  
- .alex {background-image: url(Images/alex.png);}
+.alex {background-image: url(Images/alex.png);}
  
- .alex:hover {background-image: url(Images/alex-bg.png);}
+.alex:hover {background-image: url(Images/alex-bg.png);}
  
- .anida {background-image: url(Images/anida.png);}
+.anida {background-image: url(Images/anida.png);}
  
- .anida:hover {background-image: url(Images/anida-bg.png);}
+.anida:hover {background-image: url(Images/anida-bg.png);}
  
- .dmitri {background-image: url(Images/dmitri.png);}
+.dmitri {background-image: url(Images/dmitri.png);}
  
- .dmitri:hover {background-image: url(Images/dmitri-bg.png);}
+.dmitri:hover {background-image: url(Images/dmitri-bg.png);}
  
- .gkisedtanamoogk {background-image: url(Images/gkisedtanamoogk.png);}
+.gkisedtanamoogk {background-image: url(Images/gkisedtanamoogk.png);}
  
- .gkisedtanamoogk:hover {background-image: url(Images/gkisedtanamoogk-bg.png);}
+.gkisedtanamoogk:hover {background-image: url(Images/gkisedtanamoogk-bg.png);}
  
- .hope {background-image: url(Images/hope.png);}
+.hope {background-image: url(Images/hope.png);}
  
- .hope:hover {background-image: url(Images/hope-bg.png);}
+.hope:hover {background-image: url(Images/hope-bg.png);}
  
 .kevin {background-image: url(Images/kevin.png);}
  
@@ -39,14 +39,15 @@ p {
 .wendy:hover {background-image: url(Images/wendy-bg.png);}
 
 .profiles {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 1.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: transparent;
     font-size: 1.8rem;
   }
@@ -58,6 +59,20 @@ p {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
   }
+
+.bio {
+  position: fixed;
+  left: 20%;
+  top: calc(89px + 2.5%);
+  width: 60%;
+  height: calc(95% - 89px);
+  background-color: rgba(255, 255, 255, 0.82);
+  border-radius: 25px;
+}
+
+.hidden {
+  display: none;
+}
  
  /* ---------- About Background ---------- */
  
@@ -66,8 +81,24 @@ p {
   }
  
   @media screen and (max-width: 1200px) {
-    main.content-pages {
-      background-image: none;
+    .profiles {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .profiles {
+      width: 300px;
+      height: 300px;
+    }
+
+  }
+
+  @media screen and (max-width: 576px) {
+    .profiles {
+      width: 200px;
+      height: 200px; 
     }
   }
  

@@ -1,3 +1,5 @@
+/* Index */
+
 let blob = document.querySelectorAll('.text-blob-container');
 
 window.addEventListener('DOMContentLoaded', ( ) => {
@@ -12,3 +14,15 @@ window.addEventListener('DOMContentLoaded', ( ) => {
 
     });
 })
+
+
+
+/* About */
+
+function showBio() {
+	let bioText = $(this)
+	let bioClass = $(bio)
+
+	$("bioText > bioClass").removeClass(hidden);
+}
+
