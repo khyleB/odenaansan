@@ -132,4 +132,139 @@ p.landing-text {
         font-size: 2rem;
         font-weight: 600;
     }
+=======
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-color: transparent;
+}
+
+/* --- Landing Animations --- */
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+  
+.text-blob-container {
+    position: relative;
+    display: inline-block;
+    bottom: -100px;
+    opacity: 0;
+    z-index: 11;
+  }
+  
+  .text-blob-container p {
+    font-family: var(--subheadings);
+    font-size: 1.1rem;
+    color: var(--ode-black);
+    font-weight: 400;
+  }
+  
+  .text-blob-container.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-out 0.5s;
+  }
+  
+  .text-blob-container.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-out 0.5s;
+  }
+
+
+/* --------------- Main Classes --------------- */
+
+.landing-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-intro {
+    min-width: 80%;
+    border-radius: 25px;
+}
+  
+.landing-btn {
+    font-weight: 600;
+    color: var(--ode-white);
+    background-color: var(--ode-orange);
+    margin: .2rem;
+}
+  
+.landing-btn:hover {
+    background-color: var(--ode-brown);
+    color: var(--ode-white);
+}
+  
+.landing-text {
+    color: var(--ode-white);
+    text-align: center;
+    padding: 0rem 7rem;
+}
+  
+h1.landing-text {
+    font-size: 3rem;
+}
+  
+p.landing-text {
+    font-style: italic;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+  
+
+/* --------------- Header & Nav Classes --------------- */
+
+.landing-header {
+    background-image: linear-gradient(#091301, #091301, #091301c0, #11250300);
+    padding-bottom: 5rem;
+}
+
+.landing-header p {
+    font-family: var(--logo-text);
+}
+
+.landing-header h1 {
+    font-family: var(--decorative);
+}
+
+  
+.navbar-landing {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-landing {
+        padding-bottom: 0;
+    }
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* --------------- Text Classes --------------- */
+
+p.landing-text {
+    max-width: 125ch;
+  }
+  @media screen and (max-width: 1200px) {
+    p.landing-text {
+      font-size: 1.2rem;
+    }
+    h1.landing-text {
+        font-size: 2rem;
+        font-weight: 600;
+    }
   }
