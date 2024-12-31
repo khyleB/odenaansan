@@ -25,4 +25,3 @@ function showBio() {
 
 	$("bioText > bioClass").removeClass(hidden);
 }
-
